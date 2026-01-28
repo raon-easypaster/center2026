@@ -10,27 +10,21 @@
 
 <style>
 :root{
-  --bg:#f6fbff;
+  --bg: linear-gradient(180deg,#fefce8,#ecfeff);
   --card:#ffffff;
   --text:#1f2937;
-  --sub:#6b7280;
-  --border:rgba(0,0,0,.08);
+  --sub:#475569;
+  --border:rgba(0,0,0,.06);
 
-  --blue:#2563eb;
-  --green:#22c55e;
-  --purple:#a855f7;
-  --yellow:#f59e0b;
-  --red:#ef4444;
-  --orange:#f97316;
+  --blue:#38bdf8;
+  --green:#4ade80;
+  --purple:#c084fc;
+  --yellow:#facc15;
+  --red:#f87171;
+  --orange:#fb923c;
 
-  --radius:20px;
-  --shadow:0 16px 40px rgba(0,0,0,.1);
-}
-
-*{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
+  --radius:24px;
+  --shadow:0 20px 40px rgba(0,0,0,.12);
 }
 
 body{
@@ -39,124 +33,92 @@ body{
   color:var(--text);
 }
 
-.container{
-  max-width:1100px;
-  margin:0 auto;
-  padding:0 20px;
-}
-
-/* Header */
 header{
   text-align:center;
-  padding:80px 0 50px;
+  padding:90px 20px 70px;
 }
 
-h1{
+header h1{
   font-family:"Gowun Batang",serif;
-  font-size:2.6rem;
-  margin-bottom:10px;
-}
-
-.subtitle{
-  color:var(--sub);
-  font-size:1.05rem;
-}
-
-/* Card */
-.card{
-  background:var(--card);
-  border-radius:var(--radius);
-  padding:28px;
-  box-shadow:var(--shadow);
-}
-
-.icon{
-  width:48px;
-  height:48px;
-  border-radius:14px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  color:#fff;
-  font-weight:900;
+  font-size:3rem;
+  font-weight:800;
   margin-bottom:14px;
 }
 
+header .subtitle{
+  font-size:1.15rem;
+  color:var(--sub);
+}
+
+/* 카드 공통 */
+.card{
+  background:var(--card);
+  border-radius:var(--radius);
+  padding:30px;
+  box-shadow:var(--shadow);
+  transition:.35s ease;
+}
+
+.card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 30px 60px rgba(0,0,0,.18);
+}
+
+/* 아이콘 */
+.icon{
+  width:56px;
+  height:56px;
+  border-radius:18px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:1.4rem;
+  font-weight:900;
+  color:white;
+  margin-bottom:16px;
+  transition:.35s ease;
+}
+
+.card:hover .icon{
+  transform:rotate(-6deg) scale(1.08);
+}
+
+/* 텍스트 */
 .label{
   font-family:"Gowun Batang",serif;
+  font-size:.9rem;
   color:var(--sub);
-  margin-bottom:4px;
 }
 
 .title{
-  font-size:1.25rem;
+  font-size:1.3rem;
   font-weight:800;
-  margin-bottom:8px;
+  margin:6px 0;
 }
 
 .desc{
-  color:var(--sub);
   font-size:.95rem;
+  color:#64748b;
 }
 
-.go{
-  margin-top:14px;
-  font-weight:700;
-}
-
-/* Tool grid */
+/* grid */
 .tool-grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:24px;
-  margin:60px 0 100px;
+  gap:28px;
+  margin:70px 0 120px;
 }
 
-.tool-grid a{
-  text-decoration:none;
-  color:inherit;
-}
-
-/* Workshop */
-.section{
-  margin-bottom:100px;
-}
-
+/* 워크숍 */
 .workshop-intro{
-  max-width:760px;
-  margin:0 auto 50px;
-  text-align:center;
-}
-
-.workshop-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:24px;
+  background:linear-gradient(135deg,#ffffff,#f0f9ff);
 }
 
 .quote-card{
-  max-width:760px;
-  margin:60px auto 0;
-  text-align:center;
-  background:linear-gradient(135deg,#eef2ff,#f8fafc);
-}
-
-/* Responsive */
-@media(max-width:900px){
-  .workshop-grid{
-    grid-template-columns:repeat(2,1fr);
-  }
-}
-
-@media(max-width:600px){
-  .workshop-grid{
-    grid-template-columns:1fr;
-  }
-  h1{
-    font-size:2.1rem;
-  }
+  background:linear-gradient(135deg,#fef3c7,#ecfeff);
 }
 </style>
+
 </head>
 
 <body>
