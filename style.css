@@ -1,8 +1,141 @@
---bg: linear-gradient(180deg,#fefce8,#ecfeff);
---card: #ffffff;
---blue: #38bdf8;
---green: #4ade80;
---purple: #c084fc;
---yellow: #facc15;
---orange: #fb923c;
---red: #f87171;
+:root{
+  --bg: linear-gradient(180deg,#fefce8,#ecfeff);
+  --card:#ffffff;
+  --text:#1f2937;
+  --sub:#475569;
+
+  --blue:#38bdf8;
+  --green:#4ade80;
+  --purple:#c084fc;
+  --yellow:#facc15;
+  --red:#f87171;
+  --orange:#fb923c;
+
+  --radius:24px;
+  --shadow:0 20px 40px rgba(0,0,0,.12);
+}
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family:Pretendard,system-ui,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+}
+
+.container{
+  max-width:1100px;
+  margin:0 auto;
+  padding:0 20px;
+}
+
+/* Header */
+header{
+  text-align:center;
+  padding:90px 0 70px;
+}
+
+header h1{
+  font-family:"Gowun Batang",serif;
+  font-size:3rem;
+  margin-bottom:12px;
+}
+
+.subtitle{
+  font-size:1.1rem;
+  color:var(--sub);
+}
+
+/* Section */
+.section{
+  margin:90px 0;
+}
+
+/* Card */
+.card{
+  background:var(--card);
+  border-radius:var(--radius);
+  padding:32px;
+  box-shadow:var(--shadow);
+  transition:.35s ease;
+}
+
+.card:hover{
+  transform:translateY(-8px);
+}
+
+/* Icon */
+.icon{
+  width:56px;
+  height:56px;
+  border-radius:18px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:900;
+  color:white;
+  margin-bottom:16px;
+}
+
+/* Text */
+.title{
+  font-size:1.25rem;
+  font-weight:800;
+  margin-bottom:8px;
+}
+
+.desc{
+  font-size:.95rem;
+  color:#64748b;
+}
+
+.go{
+  margin-top:16px;
+  font-weight:700;
+  color:#2563eb;
+}
+
+/* Practice */
+.practice-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:28px;
+  margin-top:40px;
+}
+
+.practice a{
+  text-decoration:none;
+  color:inherit;
+}
+
+/* Workshop */
+.workshop-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:28px;
+  margin-top:40px;
+}
+
+.quote-card{
+  margin-top:60px;
+  text-align:center;
+  background:linear-gradient(135deg,#fef3c7,#ecfeff);
+}
+
+/* Footer */
+footer{
+  text-align:center;
+  padding:40px 0;
+  color:var(--sub);
+}
+
+/* Mobile */
+@media(max-width:600px){
+  header h1{
+    font-size:2.2rem;
+  }
+}
