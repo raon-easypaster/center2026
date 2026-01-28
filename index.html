@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>지역아동센터/다함께돌봄센터 교육용 아카이브</title>
+
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#f6fbff;
+  --card:#ffffff;
+  --text:#1f2937;
+  --sub:#6b7280;
+  --border:rgba(0,0,0,.08);
+
+  --blue:#2563eb;
+  --green:#22c55e;
+  --purple:#a855f7;
+  --yellow:#f59e0b;
+  --red:#ef4444;
+  --orange:#f97316;
+
+  --radius:20px;
+  --shadow:0 16px 40px rgba(0,0,0,.1);
+}
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family:Pretendard,system-ui,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+}
+
+.container{
+  max-width:1100px;
+  margin:0 auto;
+  padding:0 20px;
+}
+
+/* Header */
+header{
+  text-align:center;
+  padding:80px 0 50px;
+}
+
+h1{
+  font-family:"Gowun Batang",serif;
+  font-size:2.6rem;
+  margin-bottom:10px;
+}
+
+.subtitle{
+  color:var(--sub);
+  font-size:1.05rem;
+}
+
+/* Card */
+.card{
+  background:var(--card);
+  border-radius:var(--radius);
+  padding:28px;
+  box-shadow:var(--shadow);
+}
+
+.icon{
+  width:48px;
+  height:48px;
+  border-radius:14px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#fff;
+  font-weight:900;
+  margin-bottom:14px;
+}
+
+.label{
+  font-family:"Gowun Batang",serif;
+  color:var(--sub);
+  margin-bottom:4px;
+}
+
+.title{
+  font-size:1.25rem;
+  font-weight:800;
+  margin-bottom:8px;
+}
+
+.desc{
+  color:var(--sub);
+  font-size:.95rem;
+}
+
+.go{
+  margin-top:14px;
+  font-weight:700;
+}
+
+/* Tool grid */
+.tool-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:24px;
+  margin:60px 0 100px;
+}
+
+.tool-grid a{
+  text-decoration:none;
+  color:inherit;
+}
+
+/* Workshop */
+.section{
+  margin-bottom:100px;
+}
+
+.workshop-intro{
+  max-width:760px;
+  margin:0 auto 50px;
+  text-align:center;
+}
+
+.workshop-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+}
+
+.quote-card{
+  max-width:760px;
+  margin:60px auto 0;
+  text-align:center;
+  background:linear-gradient(135deg,#eef2ff,#f8fafc);
+}
+
+/* Responsive */
+@media(max-width:900px){
+  .workshop-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media(max-width:600px){
+  .workshop-grid{
+    grid-template-columns:1fr;
+  }
+  h1{
+    font-size:2.1rem;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+    <h1>시흥제일교회 교회학교 아카이브</h1>
+    <p class="subtitle">AI를 활용한 교회학교 교육의 실제</p>
+  </div>
+</header>
+
+  <!-- 워크숍 -->
+  <section class="section" id="workshop">
+
+    <div class="card workshop-intro">
+      <h2 style="font-family:'Gowun Batang',serif;margin-bottom:12px">
+        AI를 활용한 해봄 프로젝트 / 스마트 돌봄 실천랩(Lab)
+      </h2>
+      <p class="subtitle">
+        AI 바이브 코딩을 통한 무비요 센터 홈페이지 구축 및 업무 자동화 AI agent 개발<br>
+        <strong>‘홈페이지, 아카이브’ 만들기</strong>에 초점을 둔 실습형 프로젝트입니다.
+      </p>
+    </div>
+
+    <div class="workshop-grid">
+
+      <div class="card">
+        <div class="icon" style="background:var(--blue)">i</div>
+        <p class="subtitle">
+          2026.03.16(월)부터 12주간<br>
+          09:00 ~ 11:00<br>
+          경기도 부천시 소사로 203 2층(카페 라온트리)
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon" style="background:var(--green)">✓</div>
+        <p class="subtitle">
+          AI의 이해<br>
+          AI agent 활용<br>
+          Vibe coding
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon" style="background:var(--purple)">★</div>
+        <p class="subtitle">
+          깃허브 기반 센터 홈페이지 및 아카이브 구축<br>
+          실무자 활용용 교육안 1종<br>
+          오픈 소스 공유 및 성과공유회 1회 개최
+        </p>
+      </div>
+
+    </div>
+
+    <div class="card quote-card">
+      <div class="icon" style="background:var(--yellow);margin:0 auto 14px">✦</div>
+      <p style="font-family:'Gowun Batang',serif;font-size:1.15rem">
+        AI는 사람를 대신하지 않습니다.<br>
+        그러나 센터를 섬기는 우리의 손을 가볍게 만들어 줍니다.
+      </p>
+    </div>
+
+  </section>
+<main class="container">
+
+  <!-- AI 도구 -->
+  <div class="tool-grid">
+
+    <a class="card" href="https://github.com">
+      <div class="icon" style="background:var(--blue)">S</div>
+      <div class="label">깃허브</div>
+      <div class="title">센터 페이지 만들기</div>
+      <div class="desc">깃허브 저장소의 이해</div>
+      <div class="go">바로 열기 →</div>
+    </a>
+
+    <a class="card" href="https://ai.studio.com" target="_blank" rel="noopener noreferrer">
+      <div class="icon" style="background:var(--green)">A</div>
+      <div class="label">나만의 앱 만들기</div>
+      <div class="title">AI studio 활용하기</div>
+      <div class="desc">아이디어가 현실로 이뤄지는 실험실</div>
+      <div class="go">바로 열기 →</div>
+    </a>
+
+    <a class="card" href="https://antigravity.google/" target="_blank" rel="noopener noreferrer">
+      <div class="icon" style="background:var(--purple)">I</div>
+      <div class="label">Vibe coding</div>
+      <div class="title">Anti gravity 활용하기</div>
+      <div class="desc">아이디어는 사람이, 코딩은 AI가</div>
+      <div class="go">바로 열기 →</div>
+    </a>
+    
+    <a class="card" href="https://gemini.google.com" target="_blank" rel="noopener noreferrer">
+      <div class="icon" style="background:var(--yellow)">G</div>
+      <div class="label">AI 서비스</div>
+      <div class="title">Gemini 바로가기</div>
+      <div class="desc">슬라이드·스토리북 제작</div>
+      <div class="go">바로 열기 →</div>
+    </a>
+
+    <a class="card" href="https://grok.com" target="_blank" rel="noopener noreferrer">
+      <div class="icon" style="background:var(--red)">K</div>
+      <div class="label">AI 서비스</div>
+      <div class="title">Grok 바로가기</div>
+      <div class="desc">이미지 → 영상 변환</div>
+      <div class="go">바로 열기 →</div>
+    </a>
+
+    <a class="card" href="https://suno.com" target="_blank" rel="noopener noreferrer">
+      <div class="icon" style="background:var(--orange)">♪</div>
+      <div class="label">음악</div>
+      <div class="title">Suno 바로가기</div>
+      <div class="desc">센터 주제가, 교육용 음악 만들기</div>
+      <div class="go">바로 열기 →</div>
+    </a>
+
+  </div>
+
+
+</main>
+
+<footer style="text-align:center;padding:40px 0;color:var(--sub)">
+  © 2026 해봄 프로젝트 아카이브
+</footer>
+
+</body>
+</html>
